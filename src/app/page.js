@@ -1,43 +1,96 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 
+
+
+
+
+
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
+    
+    <div>
+      
+
+    <nav className={styles.highBar}>
+
+
+    <a className={styles.highBarName}>
+            Shlok Parekh
+          </a>
+
+    </nav>
+      {/* Top Bar */}
+      
+      <nav className={styles.topBar}>
+      
+      <div className={styles.highBarItems}>
         <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
+          <a href="/about" className={styles.topLink}>
+            About Me
+          </a>
+          
+
+          <a href="/contact" className={styles.topLink}>
+            Contact
+          </a>
+
+          <a href="/resume" className={styles.topLink}>
+            Resume
+          </a>
+         
+         
+        
+          </p>
+      </div>  
+      </nav>
+      
+      
+    
+
+    <main className={styles.main}>
+      
+        <h1 className={styles.Title}>
+          Hello!
+        </h1>
+        <p>
+          I am Shlok!
+          
         </p>
+        <p>Welcome to my portfolio!</p>
         <div>
           <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+            href="https://www.linkedin.com/in/shlokparekh/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            By{" "}
+            
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
+              src="/LinkedINlogo.png"
+              
               className={styles.vercelLogo}
-              width={100}
-              height={24}
+              width={50.}
+              height={50}
               priority
             />
           </a>
         </div>
-      </div>
+      
+      
+      
 
-      <div className={styles.center}>
+     
+
+      <div>
         <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+          
+          src="/GunFam.jpeg"
+          alt="Car"
+          width={450}
+          height={600}
         />
       </div>
+      
 
       <div className={styles.grid}>
         <a
@@ -91,5 +144,7 @@ export default function Home() {
         </a>
       </div>
     </main>
+    </div>
+    
   );
 }
